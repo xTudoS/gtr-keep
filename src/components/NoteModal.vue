@@ -3,7 +3,7 @@
     <v-card :color="selectedNote.color">
       <div class="pa-2">
         <v-text-field
-          label="Title"
+          label="Título"
           single-line
           flat
           solo
@@ -17,7 +17,7 @@
           auto-grow
           flat
           solo
-          label="Take a note..."
+          label="Digite uma nota..."
           single-line
           :value="selectedNote.content"
           @input="updateContent"
@@ -32,8 +32,8 @@
         </v-btn>
         <ColorPickerMenu @color-selected="colorSelected" :selected="selectedNote.color" />
         <v-spacer></v-spacer>
-        <v-btn text @click="setShowNoteDialog(false)">Close</v-btn>
-        <v-btn text @click="saveNote" :loading="loading">Save</v-btn>
+        <v-btn text @click="setShowNoteDialog(false)">Fechar</v-btn>
+        <v-btn text @click="saveNote" :loading="loading">Salvar</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

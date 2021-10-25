@@ -6,7 +6,7 @@
           <v-text-field
             v-model="note.title"
             v-show="titleFieldVisible"
-            label="Title"
+            label="Título"
             single-line
             flat
             solo
@@ -21,7 +21,7 @@
             auto-grow
             flat
             solo
-            label="Take a note..."
+            label="Digita uma nota..."
             single-line
             maxlength="100"
             counter
@@ -31,7 +31,7 @@
         <v-card-actions v-show="actionsVisible">
           <ColorPickerMenu @color-selected="colorSelected" :selected="note.color" />
           <v-spacer></v-spacer>
-          <v-btn text @click="close">Close</v-btn>
+          <v-btn text @click="close">Fechar</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
